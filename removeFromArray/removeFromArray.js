@@ -5,6 +5,9 @@ const removeFromArray = function (array,remove) {
     let index="";
     for(let i=0;i<numberof-1;i++){
         index=array.indexOf(arguments[i+1]);
+        if(index===-1){
+          continue;
+        }
         console.log(index);
         array.splice(index,1);
     }
